@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/AppFullScreenTheme"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|"
+
+            app:contentScrim="@color/jds_toolbar"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:fitsSystemWindows="true"
+            app:expandedTitleGravity="center_horizontal"
+            app:layout_collapseMode="pin"
+           >
+
+            <ImageView
+                android:id="@+id/toolbarImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:fitsSystemWindows="true"
+
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/tools"
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:textColor="@color/black"
+
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/detail_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/detail_feed_description"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/detail_feed_description"
+            android:layout_below="@+id/youtube_frame"
+            android:background="@color/img_background" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Headlines"
+            android:textColor="@color/title_text_color"
+            android:id="@+id/detail_feed_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Time"
+            android:textColor="@color/secondary_text_color"
+            android:id="@+id/detail_feed_time"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/detail_feed_name"
+            android:layout_alignLeft="@+id/detail_feed_name"
+            android:layout_alignStart="@+id/detail_feed_name"
+            android:textSize="10sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Description comes here"
+            android:id="@+id/detail_feed_description"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/detail_feed_time"
+            android:layout_alignLeft="@+id/detail_feed_time"
+            android:layout_alignStart="@+id/detail_feed_time" />
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/youtube_frame"
+            android:layout_below="@+id/detail_feed_description"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/youtubethumbnailview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/play_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_recycler_view"
+
+            android:layout_toRightOf="@+id/detail_recycler_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignLeft="@+id/detail_feed_name"
+            android:layout_alignStart="@+id/detail_feed_name"
+
+            android:orientation="horizontal" >
+
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@mipmap/ic_action_share_jds"
+                android:gravity="center_horizontal|center_vertical"
+                android:id="@+id/detail_shareit"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="There are no products in this category"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:textColor="@color/title_text_color"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

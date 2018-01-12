@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item android:id="@+id/location"-->
+              <!--android:title="Location"-->
+              <!--android:icon="@drawable/ic_action_fab" />-->
+
+        <item android:id="@+id/main"
+            android:title="@string/home"
+            android:icon="@mipmap/ic_nav_home_congress" />
+        <item android:id="@+id/about_candiate"
+            android:title="@string/about_person"
+            android:icon="@mipmap/ic_about" />
+        <item android:id="@+id/manifesto"
+            android:title="@string/manifesto"
+            android:icon="@mipmap/ic_manifesto" />
+        <item android:id="@+id/images"
+            android:title="@string/image_gallery"
+            android:icon="@mipmap/ic_nav_image_congress" />
+        <item android:id="@+id/videos"
+            android:title="@string/hdk_tv"
+            android:icon="@mipmap/ic_nav_video_congress" />
+
+        <item android:id="@+id/suggestion_box"
+            android:title="@string/suggestion_box_tab"
+            android:icon="@mipmap/ic_suggestion" />
+        <item android:id="@+id/invite"
+        android:title="@string/share"
+        android:icon="@mipmap/ic_nav_share_congress" />
+
+        <item android:id="@+id/settings2"
+            android:title="@string/settings_tab"
+            android:icon="@mipmap/ic_settings" />
+
+        <!--<item android:id="@+id/About_Candidate"-->
+            <!--android:title="About"-->
+            <!--android:icon="@mipmap/ic_nav_info_congress" />-->
+
+    </group>
+</menu>

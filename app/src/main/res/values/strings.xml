@@ -1,0 +1,63 @@
+<resources>
+		 <string name="app_name">Santosh Kenchaamba</string>
+		 <string name="username">santoshkenchamba</string>
+		 <string name="titletext">Santosh Kenchaamba</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about_person_description">
+Santosh Kenchaamba Born on 6-6-1973 in Kenchamban hoskote, Hassan District in large family called \'Kenchamba\' with more than 100 cousins and uncles spread across all over the world now.
+
+Family has various business interests ranging from Coffee Estates, Rice mills, Petrol bunks to lodging. Family has been actively involved in various donations for the society majorly in villages.
+
+Santosh Started his career as entrepreneur post Management education. Started as commodity broker, stock brooking, computers \and now real estate.
+
+👉Trust member in "Dinbandhu" which work towards sustaining cultural integrity \and propagating deep cultural roots of India.
+        "\n"
+👉 Trustee in Samrakshan which work with documenting \and geo-tagging old heritage sites of archeological importance which doesn\'t fall under the perview of Archeological Survey of India.
+        "\n"
+👉 President of Kemchamba Charitable Trust which work towards rural causes like health, agriculture etc.
+        "\n"
+👉 Founder of Catalyst Consulting.
+        "\n"
+     </string>
+    <string name="title_activity_splash" translatable="false">SplashActivity</string>
+    <string name="home">Home</string>
+    <string name="about_person">About Santhosh</string>
+    <string name="as_chief">As a MLA</string>
+    <string name="achivements">Achievements</string>
+    <string name="janatadarshan">Janatadarshan</string>
+    <string name="manifesto">BJP Manifesto</string>
+    <string name="image_gallery">Image Gallery</string>
+    <string name="hdk_tv">Video Gallery</string>
+    <string name="share">Share This App</string>
+    <string name="settings_tab">Settings</string>
+    <string name="tell_friend">Tell a friend</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="app_version">1.0</string>
+
+
+    <string name="title_select_language">Select language</string>
+    <!--<string name="title_upload_quality">Select language</string>-->
+    <string name="summary_language">English or Kannada</string>
+
+
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="btn_sign_up">Send letter</string>
+    <string name="hint_phone">Valid Phone Number</string>
+    <string name="connect_to_person">Write a letter</string>
+
+
+    <string name="pref_header_about">About</string>
+    <string name="pref_header_contact_ust">Contact Us</string>
+    <string name="pref_header_email">kuruvatechnologies@gmail.com</string>
+
+    <string name="summary_about">We are a team of like-minded people from Kuruva Technologies LLP, specialized in development of Android App Development creating new trends across the app space. Glad to Help in anyway!</string>
+
+
+    <string name="suggestion_box_tab">Contact Me</string>
+
+    <string name="internet_not_available">Internet not available, Cross check your internet connectivity and try again</string>
+    <string name="invitelink">"Download App: https://play.google.com/store/apps/details?id=com.kuruvatech.santoshkenchaamba"</string>
+</resources>

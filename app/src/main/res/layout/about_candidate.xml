@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="com.kuruvatech.santoshkenchaamba.FeedDetail">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+
+
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/detail_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/img_background"
+
+                    android:layout_alignLeft="@+id/detail_feed_description"
+                    android:layout_alignStart="@+id/detail_feed_description"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Headlines"
+                    android:textColor="@color/title_text_color"
+                    android:id="@+id/detail_feed_name"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/detail_feed_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/detail_feed_name"
+                    android:fontFamily="cambria"
+                    android:text="Description comes here"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="16sp"/>
+
+                <!--<FrameLayout-->
+                    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:id="@+id/youtube_frame"-->
+                    <!--android:layout_below="@+id/detail_feed_description"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="250dp">-->
+                    <!--<com.google.android.youtube.player.YouTubeThumbnailView-->
+                        <!--android:id="@+id/youtubethumbnailview"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="250dp"-->
+                        <!--android:scaleType="fitCenter"-->
+                        <!--android:layout_gravity="center"/>-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/play_video"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+
+                        <!--android:layout_gravity="center"-->
+                        <!--android:src="@drawable/ic_play"/>-->
+                <!--</FrameLayout>-->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_feed_description"
+
+                    android:layout_toRightOf="@+id/detail_feed_description"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/detail_feed_name"
+                    android:layout_alignStart="@+id/detail_feed_name"
+
+                    android:orientation="horizontal" >
+
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:src="@mipmap/ic_action_share_jds"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:id="@+id/detail_shareit"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp" />
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="There are no products in this category"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="invisible"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BACK"-->
+                <!--android:textColor="@color/titleTextColor"-->
+                <!--android:id="@+id/back_button"-->
+                <!--android:background="@drawable/buttonselector"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentRight="true" />-->
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>
