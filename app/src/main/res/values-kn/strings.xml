@@ -40,8 +40,11 @@ C ಕ್ಯಾಟಲಿಸ್ಟ್ ಕನ್ಸಲ್ಟಿಂಗ್ ಸಂಸ�
     <string name="hint_email">ಇಮೇಲ್</string>
     <string name="btn_sign_up">ಪತ್ರ ಕಳುಹಿಸಿ</string>
     <string name="hint_phone">ದೂರವಾಣಿ ಸಂಖ್ಯೆ</string>
-    <string name="connect_to_person">ಪತ್ರ ಬರೆಯಿರಿK</string>
-
+    <string name="connect_to_person">ಪತ್ರ ಬರೆಯಿರಿ</string>
+    <string name="name_validate">ಹೆಸರು ನಮೂದಿಸಿ</string>
+    <string name="letter_validate">ಪತ್ರವನ್ನು ಬರೆಯಿರಿ</string>
+    <string name="email_validate">ಇಮೇಲ್ ಸರಿಯಾಗಿಲ್ಲ</string>
+    <string name="phone_validate">ಫೋನ್ ಸಂಖ್ಯೆ ಸರಿಯಾಗಿಲ್ಲ</string>
     <string name="pref_header_about">ನಮ್ಮ ಬಗ್ಗೆ</string>
     <string name="pref_header_contact_ust">ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</string>
     <string name="pref_header_email">kuruvatechnologies@gmail.com</string>

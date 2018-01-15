@@ -34,6 +34,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static com.kuruvatech.santoshkenchaamba.utils.Constants.POST_LETTER_URL;
 
@@ -64,18 +66,25 @@ public class SuggetionFragment  extends Fragment {
             public void onClick(View v) {
                 String name =editName.getText().toString();
                 String lettercontent =lettertextview.getText().toString();
+                String email =editEmail.getText().toString();
                 if (!validatePhoneNumber(editPhone.getText().toString())) {
-                    alertMessage("Enter Valid Phone Number");
+                    alertMessage(getString(R.string.phone_validate));
                 }
                 else if(name.trim().length() == 0){
                     editName.setFocusableInTouchMode(true);
                     editName.requestFocus();
-                    alertMessage("Enter Name");
+                    alertMessage(getString(R.string.name_validate));
                 }
                 else if(lettercontent.trim().length() == 0){
                     lettertextview.setFocusableInTouchMode(true);
                     lettertextview.requestFocus();
-                    alertMessage("Write Something into letter");
+                    alertMessage(getString(R.string.letter_validate));
+                }
+                else if(email.trim().length() != 0 && isEmailValid(email) == false)
+                {
+                    editEmail.setFocusableInTouchMode(true);
+                    editEmail.requestFocus();
+                    alertMessage(getString(R.string.email_validate));
                 }
                 else
                 {
@@ -160,6 +169,19 @@ public class SuggetionFragment  extends Fragment {
             return true;
         else if(phoneNo.matches("\\+\\d{12}")) return true;
         else return false;
+    }
+    public static boolean isEmailValid(String email) {
+        boolean isValid = false;
+
+        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+        CharSequence inputStr = email;
+
+        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(inputStr);
+        if (matcher.matches()) {
+            isValid = true;
+        }
+        return isValid;
     }
     public void alertMessage(String message) {
         DialogInterface.OnClickListener dialogClickListeneryesno = new DialogInterface.OnClickListener() {

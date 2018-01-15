@@ -1,9 +1,12 @@
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.ShareAppFragment">
-
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -12,7 +15,6 @@
             android:id="@+id/invite_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_centerHorizontal="true"
@@ -22,13 +24,6 @@
             android:clickable="true"
             android:text="@string/tell_friend"
             android:textColor="@color/titleTextColor" />
-        <!--<Button android:id="@+id/btn_send"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/btn_sign_up"-->
-            <!--android:background="@color/bittersweet2"-->
-            <!--android:layout_marginTop="40dp"-->
-            <!--android:textColor="@android:color/white"/>-->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
@@ -36,7 +31,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             android:src="@drawable/invite1" />
     </RelativeLayout>
+    </ScrollView>
 </LinearLayout>
