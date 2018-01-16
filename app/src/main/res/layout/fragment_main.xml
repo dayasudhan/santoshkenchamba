@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="There are no vendors for this location"
+                android:text="Coming soon..."
                 android:id="@+id/textView_no_feeds"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
